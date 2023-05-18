@@ -1,9 +1,10 @@
-import Page from './page';
-
-export default function DashboardLayout() {
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     return (
         <section>
-            <Page />
+            {/* Include shared UI here e.g. a header or sidebar */}
+            <nav>dashboard</nav>
+
+            {children}
         </section>
     );
 }
